@@ -19,11 +19,12 @@ class GifSearch extends Component {
     render() {
         return(
             <form onSubmit={event => this.handleSubmit(event)}>
+                <strong>Enter a Search Term:</strong><br/>
                 <input 
                     type="text" 
                     onChange={event => this.handleChange(event)}
-                />
-                <input type="submit" />
+                /><br />
+                <input type="submit" value="Find Gifs"/>
             </form>
         );
     }
